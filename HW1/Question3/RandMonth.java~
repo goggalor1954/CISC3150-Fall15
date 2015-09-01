@@ -23,6 +23,7 @@ public class RandMonth{
 			case 11: return "November";
 			case 12: return "December";
 			default: return "You did not enter a number between 1-12. Howed you do that?";
+		}
 	}
 		
 	void go(){
@@ -31,8 +32,7 @@ public class RandMonth{
 	}
 
 	public static void main(String args[]){
-	RandMonth Go = new RandMonth();
-
-	Go.go();
+		RandMonth Go = new RandMonth();
+		Go.go();
 	}
 }

@@ -1,0 +1,13 @@
+//James Roesemann
+//Cisc3150 HW1 Question4
+//Start time:  8/31/15
+//End Time:
+
+public class PrintNum{
+
+
+
+	public static void main(String args[]){
+	PrintNum Go = new PrintNum;
+	}
+}
