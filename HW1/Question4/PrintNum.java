@@ -15,20 +15,10 @@ public class PrintNum{
 	//close scanner at eof
 	void go(String[] args){
 		//File infile = new File();
-		
-		if(args.length>0){
-			File infile = new File(args[0]);
-			try{
-				Scanner readNum = new Scanner(infile);
-			}
-			catch(FileNotFoundException s){
-			}
-			System.out.println("got the file");			
+		Scanner readNum = new Scanner(System.in);
+		while(readNum.hasNext()){
+			System.out.println(readNum.next());
 		}
-		else{
-			System.exit(0);
-		}
-		
 	}
 
 	public static void main(String[] args){
