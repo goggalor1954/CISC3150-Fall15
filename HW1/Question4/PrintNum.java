@@ -8,13 +8,8 @@ import java.io.*;
 
 public class PrintNum{
 
-	// what i need to do 
-	//create file with numbers. ***done***
-	//create scanner that reads file based on argument
-	//create loop that outputs scanner to screen
-	//close scanner at eof
-	void go(String[] args){
-		//File infile = new File();
+// I'm not quite sure what was wanted here. If the point of this exersise was to print the whoile file or just the individual tokenns, so I went with the most literal intterpretation.
+	void go(){
 		Scanner readNum = new Scanner(System.in);
 		while(readNum.hasNext()){
 			System.out.println(readNum.next());
@@ -23,6 +18,6 @@ public class PrintNum{
 
 	public static void main(String[] args){
 	PrintNum Go = new PrintNum();
-	Go.go(args);
+	Go.go();
 	}
 }
