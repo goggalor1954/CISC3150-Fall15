@@ -13,14 +13,26 @@ public class PrintNum{
 	//create scanner that reads file based on argument
 	//create loop that outputs scanner to screen
 	//close scanner at eof
-	void go(){
+	void go(String[] args){
+		//File infile = new File();
+		
 		if(args.length>0){
-		Scanner readNum = new Scanner(InputStream(args[0]));
+			File infile = new File(args[0]);
+			try{
+				Scanner readNum = new Scanner(infile);
+			}
+			catch(FileNotFoundException s){
+			}
+			System.out.println("got the file");			
 		}
+		else{
+			System.exit(0);
+		}
+		
 	}
 
-	public static void main(String args[]){
+	public static void main(String[] args){
 	PrintNum Go = new PrintNum();
-	Go.go();
+	Go.go(args);
 	}
 }
