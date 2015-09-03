@@ -8,7 +8,7 @@ import java.io.*;
 
 public class PrintNum{
 
-// I'm not quite sure what was wanted here. If the point of this exersise was to print the whoile file or just the individual tokenns, so I went with the most literal intterpretation.
+// I'm not quite sure what was wanted here. If the point of this exersise was to print the whoile file or just the individual tokenns, so I went with the most literal interpretation.
 	void go(){
 		Scanner readNum = new Scanner(System.in);
 		while(readNum.hasNext()){
