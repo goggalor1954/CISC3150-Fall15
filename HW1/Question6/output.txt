@@ -1,0 +1,26 @@
+Script started on Wed 02 Sep 2015 11:27:38 PM EDT
+]0;jim@JimRoe: ~/Desktop/CISC3150-Fall15/HW1/Question6jim@JimRoe:~/Desktop/CISC3150-Fall15/HW1/Question6$ java CircleTest
+Please enter the center coordinates and radius of two circles.
+5 5 5 15 5 5
+The circles touch.
+The circles do not overlap
+One of the circles is not entirely inside the other.
+The circles are not seprate from each other.
+]0;jim@JimRoe: ~/Desktop/CISC3150-Fall15/HW1/Question6jim@JimRoe:~/Desktop/CISC3150-Fall15/HW1/Question6$ java CircleTest
+Please enter the center coordinates and radius of two circles.
+10 10 10 17 27 10
+the circles do not touch.
+The circle overlap.
+One of the circles is not entirely inside the other.
+The circles are not seprate from each other.
+]0;jim@JimRoe: ~/Desktop/CISC3150-Fall15/HW1/Question6jim@JimRoe:~/Desktop/CISC3150-Fall15/HW1/Question6$ java CircleTest
+Please enter the center coordinates and radius of two circles.
+20 20 20 17 20 3
+the circles do not touch.
+The circles do not overlap
+One of the circles is entirely inside the other.
+The circles are not seprate from each other.
+]0;jim@JimRoe: ~/Desktop/CISC3150-Fall15/HW1/Question6jim@JimRoe:~/Desktop/CISC3150-Fall15/HW1/Question6$ exit
+exit
+
+Script done on Wed 02 Sep 2015 11:28:43 PM EDT

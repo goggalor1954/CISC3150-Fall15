@@ -1,0 +1,19 @@
+Script started on Wed 02 Sep 2015 11:36:54 PM EDT
+]0;jim@JimRoe: ~/Desktop/CISC3150-Fall15/HW1/Question4jim@JimRoe:~/Desktop/CISC3150-Fall15/HW1/Question4$ java PrintNum < num.txt
+45
+36
+1887
+56
+36
+12
+42
+14.92
+99.95
+3.50
+17.76
+-12
+-4.2
+]0;jim@JimRoe: ~/Desktop/CISC3150-Fall15/HW1/Question4jim@JimRoe:~/Desktop/CISC3150-Fall15/HW1/Question4$ exit
+exit
+
+Script done on Wed 02 Sep 2015 11:37:08 PM EDT

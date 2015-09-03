@@ -1,7 +1,5 @@
 //James Roesemann
-//Cisc3150 HW1 Question4
-//Start time:  8/31/15
-//End Time:
+//Cisc3150 HW1 Question5
 
 import java.util.*;
 import java.math.*;

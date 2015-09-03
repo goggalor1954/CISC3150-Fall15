@@ -1,0 +1,16 @@
+Script started on Wed 02 Sep 2015 11:16:23 PM EDT
+]0;jim@JimRoe: ~/Desktop/CISC3150-Fall15/HW1/Question2jim@JimRoe:~/Desktop/CISC3150-Fall15/HW1/Question2$ java AreaCircle
+4
+The area of a circle with a radius of 4.0 is:50.26548245743669
+6
+The area of a circle with a radius of 6.0 is:113.09733552923255
+9
+The area of a circle with a radius of 9.0 is:254.46900494077323
+12
+The area of a circle with a radius of 12.0 is:452.3893421169302
+4.6
+The area of a circle with a radius of 4.6 is:66.47610054996001
+]0;jim@JimRoe: ~/Desktop/CISC3150-Fall15/HW1/Question2jim@JimRoe:~/Desktop/CISC3150-Fall15/HW1/Question2$ exit
+exit
+
+Script done on Wed 02 Sep 2015 11:16:49 PM EDT

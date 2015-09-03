@@ -1,0 +1,19 @@
+Script started on Wed 02 Sep 2015 11:34:52 PM EDT
+]0;jim@JimRoe: ~/Desktop/CISC3150-Fall15/HW1/Question3jim@JimRoe:~/Desktop/CISC3150-Fall15/HW1/Question3$ java RandMonth
+November
+]0;jim@JimRoe: ~/Desktop/CISC3150-Fall15/HW1/Question3jim@JimRoe:~/Desktop/CISC3150-Fall15/HW1/Question3$ java RandMonth
+August
+]0;jim@JimRoe: ~/Desktop/CISC3150-Fall15/HW1/Question3jim@JimRoe:~/Desktop/CISC3150-Fall15/HW1/Question3$ java RandMonth
+May
+]0;jim@JimRoe: ~/Desktop/CISC3150-Fall15/HW1/Question3jim@JimRoe:~/Desktop/CISC3150-Fall15/HW1/Question3$ java RandMonth
+November
+]0;jim@JimRoe: ~/Desktop/CISC3150-Fall15/HW1/Question3jim@JimRoe:~/Desktop/CISC3150-Fall15/HW1/Question3$ java RandMonth
+February
+]0;jim@JimRoe: ~/Desktop/CISC3150-Fall15/HW1/Question3jim@JimRoe:~/Desktop/CISC3150-Fall15/HW1/Question3$ java RandMonth
+August
+]0;jim@JimRoe: ~/Desktop/CISC3150-Fall15/HW1/Question3jim@JimRoe:~/Desktop/CISC3150-Fall15/HW1/Question3$ java RandMonth
+April
+]0;jim@JimRoe: ~/Desktop/CISC3150-Fall15/HW1/Question3jim@JimRoe:~/Desktop/CISC3150-Fall15/HW1/Question3$ exit
+exit
+
+Script done on Wed 02 Sep 2015 11:35:09 PM EDT
