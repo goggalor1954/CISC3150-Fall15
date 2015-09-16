@@ -18,7 +18,8 @@ public class MyCalender{
 		firstOfWeek=enteredDate();
 		//testing
 		int currentMonth;
-		while(firstOfWeek.currentMonth<3){
+		while(firstOfWeek.currentMonth<13){
+			system.out.println("");
 			monthHeader(firstOfWeek);
 			currentMonth=firstOfWeek.currentMonth;
 			while(firstOfWeek.currentMonth==currentMonth){
@@ -146,10 +147,13 @@ public class MyCalender{
 				
 	//method to set the variables of the week
 	String[] weekValues(String[] dayBox, FirstDay firstOfWeek){
-		int currentDay = firstOfWeek.currentDay;
-		for(int i=firstOfWeek.weekDay; i<7 || currentDay>firstOfWeek.daysInMonth; i++){
-			dayBox[i]=firstOfWeek.currentDay+"";
+		int currentDay=firstOfWeek.currentDay;
+		for(int i=firstOfWeek.weekDay; i<7; i++){
+			dayBox[i]=currentDay+"";
 			currentDay++;
+			// i know this should be put in the condition of the for loop, but for some reason i get thrown an out of bouds exceptioon here and I can't figure out why, so i'm just sticking this here because it works.
+			if(currentDay>firstOfWeek.daysInMonth) i=7;
+
 		}
 		return dayBox;
 	}
