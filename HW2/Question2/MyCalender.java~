@@ -146,9 +146,10 @@ public class MyCalender{
 				
 	//method to set the variables of the week
 	String[] weekValues(String[] dayBox, FirstDay firstOfWeek){
-		for(int i=firstOfWeek.weekDay; i<7 || firstOfWeek.currentDay>firstOfWeek.daysInMonth; i++){
+		int currentDay = firstOfWeek.currentDay;
+		for(int i=firstOfWeek.weekDay; i<7 || currentDay>firstOfWeek.daysInMonth; i++){
 			dayBox[i]=firstOfWeek.currentDay+"";
-			firstOfWeek.currentDay++;
+			currentDay++;
 		}
 		return dayBox;
 	}
