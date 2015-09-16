@@ -174,8 +174,12 @@ public class MyCalender{
 				}
 				else{
 					firstOfWeek.daysInMonth=28;
+					//determine if its a leap year
+					if((firstOfWeek.year%4==0 && firstOfWeek.year%100!=0) || ( firstOfWeek.year%4==0 && firstOfWeek.year%400==0)){
+						firstOfWeek.daysInMonth++;
+					}
 				}
-				if(firstOfWeek.weekDay<6) firstOfWeek.weekDay++;
+				if(firstOfWeek.weekDay+i<6) firstOfWeek.weekDay+=i+1;
 				else firstOfWeek.weekDay=0;	
 				return firstOfWeek;
 			}
