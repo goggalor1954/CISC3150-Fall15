@@ -19,21 +19,17 @@ public class PyramidBuild{
 		}
 		return-1;
 	}
-// generate a front stack and a back stack based on the entered text, still dosent work with number >9
-// im going to rework this so that it prints out blank spaces in a loop untill it gets to the number.
+	//method that prints the "bricks" of the pyramid.
 	void printPry(int numVal){
-		//atempt to fix the spaceing issue with double digits;
-		String smallBrick="1", largeBrick+"2";
-		String brickSize=smallBrick;
-		//if(numVal>10) rowCount>=2+"";
+		String brickSize="1";
 		//loop to print each row, starts out printing spaces, then moves to an inner loop that prints the numbers.
 		for(int rowCount=1; rowCount<=numVal; rowCount++){
-			//if(rowCount>10) brickSize=2+"";
+			//prints out space
 			for(int blankSpace=0; blankSpace<(numVal-rowCount)*2; blankSpace++){
-				System.out.printf("%"+brickSize+"s", "");
+				System.out.printf("%"+1+"s", "");
 			}
+			//prints the top brick
 			if(rowCount==1){
-				System.out.printf("%"+brickSize+"s", "");
 				System.out.printf("%"+brickSize+"d", rowCount);
 			}
 			else{
@@ -43,7 +39,7 @@ public class PyramidBuild{
 					System.out.printf("%"+brickSize+"s", "");
 				}
 			//prints out the back of the row, so long as it is not the top of the pyramid
-				for(int backPryBrick=rowCount; backPryBrick>0; backPryBrick--){
+				for(int backPryBrick=rowCount-1; backPryBrick>0; backPryBrick--){
 					System.out.printf("%"+brickSize+"d", backPryBrick);
 					System.out.printf("%"+brickSize+"s", "");
 				}

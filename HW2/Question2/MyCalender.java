@@ -16,7 +16,6 @@ public class MyCalender{
 	void go(){
 		FirstDay firstOfWeek = new FirstDay();
 		firstOfWeek=enteredDate();
-		//testing
 		int currentMonth;
 		while(firstOfWeek.currentMonth<13){
 			System.out.println("");

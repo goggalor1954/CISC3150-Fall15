@@ -1,0 +1,28 @@
+//James Roesemann
+//HW2 Question 4
+// very easy. I will be sureto use this feature in the future.
+
+
+public class BreakLabel{
+
+	public static void main(String[] args){
+	BreakLabel Go = new BreakLabel();
+	Go.go(); 
+	}
+
+
+	void go(){
+		int someNum=12;
+	
+		labelTest:
+		for(int i=0; i<20; i++){
+			for( int j=0; j<20; j++){
+			if(j==someNum){
+					System.out.println("if you did this right, only this statment will apperar.");
+					break labelTest;
+				}
+			}	
+			System.out.println("if something went wrong, this should also print.");
+		} 
+	}
+}

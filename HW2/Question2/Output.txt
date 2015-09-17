@@ -1,0 +1,420 @@
+Script started on Wed 16 Sep 2015 08:41:58 PM EDT
+]0;jim@TheMilkMan-pc: ~/Desktop/CISC3150-Fall15/HW2/Question2jim@TheMilkMan-pc:~/Desktop/CISC3150-Fall15/HW2/Question2$ exitjava MyCalender
+Please enter the year you want to see?
+2016
+Now enter the day of the week the first of January falls on.
+Monday
+
+ 2016         January
+ SU MO TU WE TH FR SA
+  -  1  2  3  4  5  6
+  7  8  9 10 11 12 13
+ 14 15 16 17 18 19 20
+ 21 22 23 24 25 26 27
+ 28 29 30 31  -  -  -
+
+ 2016        February
+ SU MO TU WE TH FR SA
+  -  -  -  -  1  2  3
+  4  5  6  7  8  9 10
+ 11 12 13 14 15 16 17
+ 18 19 20 21 22 23 24
+ 25 26 27 28 29  -  -
+
+ 2016           March
+ SU MO TU WE TH FR SA
+  -  -  -  -  -  1  2
+  3  4  5  6  7  8  9
+ 10 11 12 13 14 15 16
+ 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30
+ 31  -  -  -  -  -  -
+
+ 2016           April
+ SU MO TU WE TH FR SA
+  -  1  2  3  4  5  6
+  7  8  9 10 11 12 13
+ 14 15 16 17 18 19 20
+ 21 22 23 24 25 26 27
+ 28 29 30  -  -  -  -
+
+ 2016             May
+ SU MO TU WE TH FR SA
+  -  -  -  1  2  3  4
+  5  6  7  8  9 10 11
+ 12 13 14 15 16 17 18
+ 19 20 21 22 23 24 25
+ 26 27 28 29 30 31  -
+
+ 2016            June
+ SU MO TU WE TH FR SA
+  -  -  -  -  -  -  1
+  2  3  4  5  6  7  8
+  9 10 11 12 13 14 15
+ 16 17 18 19 20 21 22
+ 23 24 25 26 27 28 29
+ 30  -  -  -  -  -  -
+
+ 2016            July
+ SU MO TU WE TH FR SA
+  -  1  2  3  4  5  6
+  7  8  9 10 11 12 13
+ 14 15 16 17 18 19 20
+ 21 22 23 24 25 26 27
+ 28 29 30 31  -  -  -
+
+ 2016          August
+ SU MO TU WE TH FR SA
+  -  -  -  -  1  2  3
+  4  5  6  7  8  9 10
+ 11 12 13 14 15 16 17
+ 18 19 20 21 22 23 24
+ 25 26 27 28 29 30 31
+
+ 2016       September
+ SU MO TU WE TH FR SA
+  1  2  3  4  5  6  7
+  8  9 10 11 12 13 14
+ 15 16 17 18 19 20 21
+ 22 23 24 25 26 27 28
+ 29 30  -  -  -  -  -
+
+ 2016         October
+ SU MO TU WE TH FR SA
+  -  -  1  2  3  4  5
+  6  7  8  9 10 11 12
+ 13 14 15 16 17 18 19
+ 20 21 22 23 24 25 26
+ 27 28 29 30 31  -  -
+
+ 2016        November
+ SU MO TU WE TH FR SA
+  -  -  -  -  -  1  2
+  3  4  5  6  7  8  9
+ 10 11 12 13 14 15 16
+ 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30
+
+ 2016        December
+ SU MO TU WE TH FR SA
+  1  2  3  4  5  6  7
+  8  9 10 11 12 13 14
+ 15 16 17 18 19 20 21
+ 22 23 24 25 26 27 28
+ 29 30 31  -  -  -  -
+]0;jim@TheMilkMan-pc: ~/Desktop/CISC3150-Fall15/HW2/Question2jim@TheMilkMan-pc:~/Desktop/CISC3150-Fall15/HW2/Question2$ java MyCalender
+Please enter the year you want to see?
+2000
+Now enter the day of the week the first of January falls on.
+Friday
+
+ 2000         January
+ SU MO TU WE TH FR SA
+  -  -  -  -  -  1  2
+  3  4  5  6  7  8  9
+ 10 11 12 13 14 15 16
+ 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30
+ 31  -  -  -  -  -  -
+
+ 2000        February
+ SU MO TU WE TH FR SA
+  -  1  2  3  4  5  6
+  7  8  9 10 11 12 13
+ 14 15 16 17 18 19 20
+ 21 22 23 24 25 26 27
+ 28 29  -  -  -  -  -
+
+ 2000           March
+ SU MO TU WE TH FR SA
+  -  -  1  2  3  4  5
+  6  7  8  9 10 11 12
+ 13 14 15 16 17 18 19
+ 20 21 22 23 24 25 26
+ 27 28 29 30 31  -  -
+
+ 2000           April
+ SU MO TU WE TH FR SA
+  -  -  -  -  -  1  2
+  3  4  5  6  7  8  9
+ 10 11 12 13 14 15 16
+ 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30
+
+ 2000             May
+ SU MO TU WE TH FR SA
+  1  2  3  4  5  6  7
+  8  9 10 11 12 13 14
+ 15 16 17 18 19 20 21
+ 22 23 24 25 26 27 28
+ 29 30 31  -  -  -  -
+
+ 2000            June
+ SU MO TU WE TH FR SA
+  -  -  -  1  2  3  4
+  5  6  7  8  9 10 11
+ 12 13 14 15 16 17 18
+ 19 20 21 22 23 24 25
+ 26 27 28 29 30  -  -
+
+ 2000            July
+ SU MO TU WE TH FR SA
+  -  -  -  -  -  1  2
+  3  4  5  6  7  8  9
+ 10 11 12 13 14 15 16
+ 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30
+ 31  -  -  -  -  -  -
+
+ 2000          August
+ SU MO TU WE TH FR SA
+  -  1  2  3  4  5  6
+  7  8  9 10 11 12 13
+ 14 15 16 17 18 19 20
+ 21 22 23 24 25 26 27
+ 28 29 30 31  -  -  -
+
+ 2000       September
+ SU MO TU WE TH FR SA
+  -  -  -  -  1  2  3
+  4  5  6  7  8  9 10
+ 11 12 13 14 15 16 17
+ 18 19 20 21 22 23 24
+ 25 26 27 28 29 30  -
+
+ 2000         October
+ SU MO TU WE TH FR SA
+  -  -  -  -  -  -  1
+  2  3  4  5  6  7  8
+  9 10 11 12 13 14 15
+ 16 17 18 19 20 21 22
+ 23 24 25 26 27 28 29
+ 30 31  -  -  -  -  -
+
+ 2000        November
+ SU MO TU WE TH FR SA
+  -  -  1  2  3  4  5
+  6  7  8  9 10 11 12
+ 13 14 15 16 17 18 19
+ 20 21 22 23 24 25 26
+ 27 28 29 30  -  -  -
+
+ 2000        December
+ SU MO TU WE TH FR SA
+  -  -  -  -  1  2  3
+  4  5  6  7  8  9 10
+ 11 12 13 14 15 16 17
+ 18 19 20 21 22 23 24
+ 25 26 27 28 29 30 31
+]0;jim@TheMilkMan-pc: ~/Desktop/CISC3150-Fall15/HW2/Question2jim@TheMilkMan-pc:~/Desktop/CISC3150-Fall15/HW2/Question2$ java MyCalender
+Please enter the year you want to see?
+1776
+Now enter the day of the week the first of January falls on.
+Tuesday
+
+ 1776         January
+ SU MO TU WE TH FR SA
+  -  -  1  2  3  4  5
+  6  7  8  9 10 11 12
+ 13 14 15 16 17 18 19
+ 20 21 22 23 24 25 26
+ 27 28 29 30 31  -  -
+
+ 1776        February
+ SU MO TU WE TH FR SA
+  -  -  -  -  -  1  2
+  3  4  5  6  7  8  9
+ 10 11 12 13 14 15 16
+ 17 18 19 20 21 22 23
+ 24 25 26 27 28 29  -
+
+ 1776           March
+ SU MO TU WE TH FR SA
+  -  -  -  -  -  -  1
+  2  3  4  5  6  7  8
+  9 10 11 12 13 14 15
+ 16 17 18 19 20 21 22
+ 23 24 25 26 27 28 29
+ 30 31  -  -  -  -  -
+
+ 1776           April
+ SU MO TU WE TH FR SA
+  -  -  1  2  3  4  5
+  6  7  8  9 10 11 12
+ 13 14 15 16 17 18 19
+ 20 21 22 23 24 25 26
+ 27 28 29 30  -  -  -
+
+ 1776             May
+ SU MO TU WE TH FR SA
+  -  -  -  -  1  2  3
+  4  5  6  7  8  9 10
+ 11 12 13 14 15 16 17
+ 18 19 20 21 22 23 24
+ 25 26 27 28 29 30 31
+
+ 1776            June
+ SU MO TU WE TH FR SA
+  1  2  3  4  5  6  7
+  8  9 10 11 12 13 14
+ 15 16 17 18 19 20 21
+ 22 23 24 25 26 27 28
+ 29 30  -  -  -  -  -
+
+ 1776            July
+ SU MO TU WE TH FR SA
+  -  -  1  2  3  4  5
+  6  7  8  9 10 11 12
+ 13 14 15 16 17 18 19
+ 20 21 22 23 24 25 26
+ 27 28 29 30 31  -  -
+
+ 1776          August
+ SU MO TU WE TH FR SA
+  -  -  -  -  -  1  2
+  3  4  5  6  7  8  9
+ 10 11 12 13 14 15 16
+ 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30
+ 31  -  -  -  -  -  -
+
+ 1776       September
+ SU MO TU WE TH FR SA
+  -  1  2  3  4  5  6
+  7  8  9 10 11 12 13
+ 14 15 16 17 18 19 20
+ 21 22 23 24 25 26 27
+ 28 29 30  -  -  -  -
+
+ 1776         October
+ SU MO TU WE TH FR SA
+  -  -  -  1  2  3  4
+  5  6  7  8  9 10 11
+ 12 13 14 15 16 17 18
+ 19 20 21 22 23 24 25
+ 26 27 28 29 30 31  -
+
+ 1776        November
+ SU MO TU WE TH FR SA
+  -  -  -  -  -  -  1
+  2  3  4  5  6  7  8
+  9 10 11 12 13 14 15
+ 16 17 18 19 20 21 22
+ 23 24 25 26 27 28 29
+ 30  -  -  -  -  -  -
+
+ 1776        December
+ SU MO TU WE TH FR SA
+  -  1  2  3  4  5  6
+  7  8  9 10 11 12 13
+ 14 15 16 17 18 19 20
+ 21 22 23 24 25 26 27
+ 28 29 30 31  -  -  -
+]0;jim@TheMilkMan-pc: ~/Desktop/CISC3150-Fall15/HW2/Question2jim@TheMilkMan-pc:~/Desktop/CISC3150-Fall15/HW2/Question2$ java MyCalender
+Please enter the year you want to see?
+1999
+Now enter the day of the week the first of January falls on.
+Sunday
+
+ 1999         January
+ SU MO TU WE TH FR SA
+  1  2  3  4  5  6  7
+  8  9 10 11 12 13 14
+ 15 16 17 18 19 20 21
+ 22 23 24 25 26 27 28
+ 29 30 31  -  -  -  -
+
+ 1999        February
+ SU MO TU WE TH FR SA
+  -  -  -  1  2  3  4
+  5  6  7  8  9 10 11
+ 12 13 14 15 16 17 18
+ 19 20 21 22 23 24 25
+ 26 27 28  -  -  -  -
+
+ 1999           March
+ SU MO TU WE TH FR SA
+  -  -  -  1  2  3  4
+  5  6  7  8  9 10 11
+ 12 13 14 15 16 17 18
+ 19 20 21 22 23 24 25
+ 26 27 28 29 30 31  -
+
+ 1999           April
+ SU MO TU WE TH FR SA
+  -  -  -  -  -  -  1
+  2  3  4  5  6  7  8
+  9 10 11 12 13 14 15
+ 16 17 18 19 20 21 22
+ 23 24 25 26 27 28 29
+ 30  -  -  -  -  -  -
+
+ 1999             May
+ SU MO TU WE TH FR SA
+  -  1  2  3  4  5  6
+  7  8  9 10 11 12 13
+ 14 15 16 17 18 19 20
+ 21 22 23 24 25 26 27
+ 28 29 30 31  -  -  -
+
+ 1999            June
+ SU MO TU WE TH FR SA
+  -  -  -  -  1  2  3
+  4  5  6  7  8  9 10
+ 11 12 13 14 15 16 17
+ 18 19 20 21 22 23 24
+ 25 26 27 28 29 30  -
+
+ 1999            July
+ SU MO TU WE TH FR SA
+  -  -  -  -  -  -  1
+  2  3  4  5  6  7  8
+  9 10 11 12 13 14 15
+ 16 17 18 19 20 21 22
+ 23 24 25 26 27 28 29
+ 30 31  -  -  -  -  -
+
+ 1999          August
+ SU MO TU WE TH FR SA
+  -  -  1  2  3  4  5
+  6  7  8  9 10 11 12
+ 13 14 15 16 17 18 19
+ 20 21 22 23 24 25 26
+ 27 28 29 30 31  -  -
+
+ 1999       September
+ SU MO TU WE TH FR SA
+  -  -  -  -  -  1  2
+  3  4  5  6  7  8  9
+ 10 11 12 13 14 15 16
+ 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30
+
+ 1999         October
+ SU MO TU WE TH FR SA
+  1  2  3  4  5  6  7
+  8  9 10 11 12 13 14
+ 15 16 17 18 19 20 21
+ 22 23 24 25 26 27 28
+ 29 30 31  -  -  -  -
+
+ 1999        November
+ SU MO TU WE TH FR SA
+  -  -  -  1  2  3  4
+  5  6  7  8  9 10 11
+ 12 13 14 15 16 17 18
+ 19 20 21 22 23 24 25
+ 26 27 28 29 30  -  -
+
+ 1999        December
+ SU MO TU WE TH FR SA
+  -  -  -  -  -  1  2
+  3  4  5  6  7  8  9
+ 10 11 12 13 14 15 16
+ 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30
+ 31  -  -  -  -  -  -
+]0;jim@TheMilkMan-pc: ~/Desktop/CISC3150-Fall15/HW2/Question2jim@TheMilkMan-pc:~/Desktop/CISC3150-Fall15/HW2/Question2$ exitr[K
+exit
+
+Script done on Wed 16 Sep 2015 08:42:56 PM EDT

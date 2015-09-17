@@ -1,0 +1,35 @@
+Script started on Wed 16 Sep 2015 08:52:12 PM EDT
+]0;jim@TheMilkMan-pc: ~/Desktop/CISC3150-Fall15/HW2/Question3jim@TheMilkMan-pc:~/Desktop/CISC3150-Fall15/HW2/Question3$ java CheckPalindrome
+Please enter a word. Capitlization counts when checking for Palindromes.
+kayak
+The Word is a palindrome.
+kayak
+kayak
+]0;jim@TheMilkMan-pc: ~/Desktop/CISC3150-Fall15/HW2/Question3jim@TheMilkMan-pc:~/Desktop/CISC3150-Fall15/HW2/Question3$ java CheckPalindrome
+Please enter a word. Capitlization counts when checking for Palindromes.
+poop
+The Word is a palindrome.
+poop
+poop
+]0;jim@TheMilkMan-pc: ~/Desktop/CISC3150-Fall15/HW2/Question3jim@TheMilkMan-pc:~/Desktop/CISC3150-Fall15/HW2/Question3$ java CheckPalindrome
+Please enter a word. Capitlization counts when checking for Palindromes.
+republican
+The Word is not a palindrome.
+republican
+nacilbuper
+]0;jim@TheMilkMan-pc: ~/Desktop/CISC3150-Fall15/HW2/Question3jim@TheMilkMan-pc:~/Desktop/CISC3150-Fall15/HW2/Question3$ java CheckPalindrome
+Please enter a word. Capitlization counts when checking for Palindromes.
+c cat
+The Word is not a palindrome.
+cat
+tac
+]0;jim@TheMilkMan-pc: ~/Desktop/CISC3150-Fall15/HW2/Question3jim@TheMilkMan-pc:~/Desktop/CISC3150-Fall15/HW2/Question3$ java CheckPalindrome
+Please enter a word. Capitlization counts when checking for Palindromes.
+tenet
+The Word is a palindrome.
+tenet
+tenet
+]0;jim@TheMilkMan-pc: ~/Desktop/CISC3150-Fall15/HW2/Question3jim@TheMilkMan-pc:~/Desktop/CISC3150-Fall15/HW2/Question3$ exit
+exit
+
+Script done on Wed 16 Sep 2015 08:53:19 PM EDT

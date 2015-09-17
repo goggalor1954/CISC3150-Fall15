@@ -1,0 +1,7 @@
+Script started on Wed 16 Sep 2015 08:55:33 PM EDT
+]0;jim@TheMilkMan-pc: ~/Desktop/CISC3150-Fall15/HW2/Question4jim@TheMilkMan-pc:~/Desktop/CISC3150-Fall15/HW2/Question4$ java BreakLabel
+if you did this right, only this statment will apperar.
+]0;jim@TheMilkMan-pc: ~/Desktop/CISC3150-Fall15/HW2/Question4jim@TheMilkMan-pc:~/Desktop/CISC3150-Fall15/HW2/Question4$ exit
+exit
+
+Script done on Wed 16 Sep 2015 08:55:46 PM EDT

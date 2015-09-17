@@ -1,0 +1,49 @@
+Script started on Wed 16 Sep 2015 08:38:11 PM EDT
+]0;jim@TheMilkMan-pc: ~/Desktop/CISC3150-Fall15/HW2/Question1jim@TheMilkMan-pc:~/Desktop/CISC3150-Fall15/HW2/Question1$ java PyramidBuild
+How tall do you want your pryamid to be? Enter one number.
+4
+      1
+    1 2 1 
+  1 2 3 2 1 
+1 2 3 4 3 2 1 
+]0;jim@TheMilkMan-pc: ~/Desktop/CISC3150-Fall15/HW2/Question1jim@TheMilkMan-pc:~/Desktop/CISC3150-Fall15/HW2/Question1$ java PyramidBuild
+How tall do you want your pryamid to be? Enter one number.
+7
+            1
+          1 2 1 
+        1 2 3 2 1 
+      1 2 3 4 3 2 1 
+    1 2 3 4 5 4 3 2 1 
+  1 2 3 4 5 6 5 4 3 2 1 
+1 2 3 4 5 6 7 6 5 4 3 2 1 
+]0;jim@TheMilkMan-pc: ~/Desktop/CISC3150-Fall15/HW2/Question1jim@TheMilkMan-pc:~/Desktop/CISC3150-Fall15/HW2/Question1$ java PyramidBuild
+How tall do you want your pryamid to be? Enter one number.
+9
+                1
+              1 2 1 
+            1 2 3 2 1 
+          1 2 3 4 3 2 1 
+        1 2 3 4 5 4 3 2 1 
+      1 2 3 4 5 6 5 4 3 2 1 
+    1 2 3 4 5 6 7 6 5 4 3 2 1 
+  1 2 3 4 5 6 7 8 7 6 5 4 3 2 1 
+1 2 3 4 5 6 7 8 9 8 7 6 5 4 3 2 1 
+]0;jim@TheMilkMan-pc: ~/Desktop/CISC3150-Fall15/HW2/Question1jim@TheMilkMan-pc:~/Desktop/CISC3150-Fall15/HW2/Question1$ java PyramidBuild
+How tall do you want your pryamid to be? Enter one number.
+8
+              1
+            1 2 1 
+          1 2 3 2 1 
+        1 2 3 4 3 2 1 
+      1 2 3 4 5 4 3 2 1 
+    1 2 3 4 5 6 5 4 3 2 1 
+  1 2 3 4 5 6 7 6 5 4 3 2 1 
+1 2 3 4 5 6 7 8 7 6 5 4 3 2 1 
+]0;jim@TheMilkMan-pc: ~/Desktop/CISC3150-Fall15/HW2/Question1jim@TheMilkMan-pc:~/Desktop/CISC3150-Fall15/HW2/Question1$ java PyramidBuild
+How tall do you want your pryamid to be? Enter one number.
+1
+1
+]0;jim@TheMilkMan-pc: ~/Desktop/CISC3150-Fall15/HW2/Question1jim@TheMilkMan-pc:~/Desktop/CISC3150-Fall15/HW2/Question1$ exit
+exit
+
+Script done on Wed 16 Sep 2015 08:38:36 PM EDT
