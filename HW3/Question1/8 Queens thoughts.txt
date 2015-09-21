@@ -1,0 +1,9 @@
+/* n queens proble. what i need to do.
+1// build the board( asci text)/  if you really want to be bold diferentiate color
+//build the lines, then the inside of the boxes, trepetitivly.
+populate the board (a 2d array. such that no two options are evert the same. 
+maybe a way to save on memory would to move one piece and check rather that rebuilding every time. how would that work?
+after either moving one piece or all pieces, check wether it works. if it does. print it and recored the number.
+//maybe it woulb e better ot move all picece insted of all, incase it dosent work.
+// i should create a way to store borards that work, so that i'm not printing out he same board 8 diffrnt times.*/
+this is n queens, so it has to work for whatever number is input.
