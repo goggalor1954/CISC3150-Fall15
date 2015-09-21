@@ -5,8 +5,6 @@
 //that will represent the number of queens on the board. the program will processs all possible board configurations, 
 // so, will print out if the configuration is aceptable, and record the number of aceptable configuraaitons.
 // now i need to figure out the most eficent way of generating the queens based on the number input.
-// a swap function woulf be good as there will always be the same amount of queens and spaces.
-//i think i may need to crate a chess piece object to i can tell if it's safe or not. maybe not.
 
 import java.util.*;
 
@@ -19,14 +17,16 @@ public class nQueen{
 	
 	void go(){
 	//array representing the board
-	Piece[][] chessBoard = new Piece[8][8];
-	int nSize=8;
-	createBoard(chessBoard, nSize);
-	//setQueens(chessBoard, nSize);
-	//setBoard(chessBoard);
-
-
-	setBoard(chessBoard);
+		Piece[][] chessBoard = new Piece[8][8];
+		int nSize=8;
+		createBoard(chessBoard, nSize);
+		testIfSafe(chessBoard, nSize);
+		setBoard(chessBoard);
+		
+		//testing
+		swap(chessBoard, 0, 0, 1, 3);
+		testIfSafe(chessBoard, nSize);
+		setBoard(chessBoard);
 	}
 	// denotes  piece on the board, will be used of either queens or blank spaces
 	class Piece{
@@ -56,10 +56,10 @@ public class nQueen{
 		}
 		chessEdge();
 	}
+	//void setQueens(){
 	// this method will eventually populate the board with the next seqence of queens. by initiall populating the board with n number of queens in a sequential row. .it then moves the queens acordingly
 	// initlization is now done in anohter method, will shivt values after tthe pieces are tested.
-		}
-	}*/
+
 	void swap(Piece[][] board, int rowA, int colA, int rowB, int colB ){
 		String temp;
 		temp=board[rowA][colA].pieceName; 
@@ -81,6 +81,46 @@ public class nQueen{
 			collumn++;
 			if(collumn==8){
 				row++; collumn=0;
+			}
+		}
+	}
+	void safeHorizontal(Piece[][] board, int rowA, int colA){
+		board[rowA][colA].safe=true;
+			// if the piece is on the edge
+		if(colA==0 || colA==7) return;
+			//if you have a piece that is on each oppisite side
+		if(board[rowA][colA-1].pieceName=="Q" && board[rowA][colA+1].pieceName=="Q") return;
+		// else if there is any other piece in your path you are not safe
+		for(int i=0; i<8; i++){
+			if(board[rowA][i].pieceName=="Q" && i!=colA){
+				board[rowA][colA].safe=false;
+				return;
+			}
+		}
+	}
+	void safeVertical(Piece[][] board,  int row, int col){
+		board[row][col].safe=true;
+		if(row==0 || row==7) return;
+		if(board[row-1][col].pieceName=="Q" && board[row+1][col].pieceName=="Q") return;
+		for(int i=0; i<8; i++){
+			if(board[i][col].pieceName=="Q" && i!=row){
+				board[row][col].safe=false;
+				return;
+			}
+		}
+	}
+//	void safeDiagnal();
+	void testIfSafe(Piece[][] board, int numSize){
+		int queenCount=0; //will eventually equal numSize when i put it in later
+		tooManyQueens:
+		for(int i =0; i<8; i++){
+			for (int j=0; j<8; j++){
+				if(board[i][j].pieceName=="Q"){
+					safeHorizontal(board, i, j);
+					safeVertical(board, i, j);
+					queenCount++;
+				}
+				if(queenCount==numSize) break tooManyQueens;
 			}
 		}
 	}
