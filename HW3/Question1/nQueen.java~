@@ -121,7 +121,7 @@ public class nQueen{
 		if(row==0 && col==0 || row==7 && col==0 || row==7 && col==7 || row==0 && col==7){
 			return true;
 		}
-		//if surounded( first testing if on an edge)
+		//if surounded( first testing if on an edge
 		if(row!=0 && row!=7 && col!=0 && col!=7){
 			if(board[row-1][col-1].pieceName=="Q" && board[row+1][col-1].pieceName=="Q" && board[row-1][col+1].pieceName=="Q" && board[row+1][col+1].pieceName=="Q") return true;
 		}
