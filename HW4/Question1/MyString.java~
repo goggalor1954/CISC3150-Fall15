@@ -13,6 +13,7 @@ public final class MyString{
 	private final MyString tail;
 	
 	//default constructor
+	// i may need to set this to private later
 	public MyString(){
 		tail=null;
 		head='\0';
@@ -44,6 +45,7 @@ public final class MyString{
 		this.head=newHead;
 		//this.sizeOf=0;
 	}
+
 	//creates a MyString from an array of characters
 	public MyString(char[] chars){
 		MyString newMyString = new MyString();
@@ -94,6 +96,58 @@ public final class MyString{
 		if(curIndex>=begin) return new MyString(oldTail.getHead(), subStringIter( begin, end, oldTail.getTail(), curIndex+1));
 		return subStringIter( begin, end, oldTail.getTail(), curIndex+1);
 	}
+	//returns a version of the current mystring object where all the characters are lower case
+	public MyString toLowerCase(){
+		return toLowerIter( this);
+	}
+	//iterates through the string untill the end ,replaceing the MyString objects with upper case objects to lowercase obcects
+	public MyString toLowerIter(MyString nextTail){
+		if(nextTail.getTail()==null) return nextTail;
+		if(nextTail.getHead()>='A' && nextTail.getHead()<='Z'){
+			int changeVal=(int)nextTail.getHead()+32;
+			return new MyString ((char)changeVal, toLowerIter(nextTail.getTail()));
+		}
+		return new MyString( nextTail.getHead(), toLowerIter(nextTail.getTail()));
+	}
+	//returns a version of the current mystring object where all the characters are uppercase 
+	public MyString toUpperCase(){
+		return toUpperIter( this);
+	}
+	//iterates through the string untill the end ,replaceing the MyString objects with lower case characters to upper case characters
+	public MyString toUpperIter(MyString nextTail){
+		if(nextTail.getTail()==null) return nextTail;
+		if(nextTail.getHead()>='a' && nextTail.getHead()<='z'){
+			int changeVal=(int)nextTail.getHead()-32;
+			return new MyString ((char)changeVal, toUpperIter(nextTail.getTail()));
+		}
+		return new MyString( nextTail.getHead(), toUpperIter(nextTail.getTail()));
+	}
+	//boolean that returens true if all the characters in the MyStringare the same
+	boolean equals(MyString s){
+		return equalsIter(this, s);
+	}
+	//iteratesthrough the MyStrings untill the end or a diffrent character is detected, returns the apropriate boolean value
+	boolean equalsIter( MyString orignal, MyString other){
+		if(orignal.getHead()==other.getHead() && orignal.getTail()==null && other.getTail()==null) return true;
+		if(orignal.getHead()!=other.getHead()) return false;
+		return equalsIter(orignal.getTail(), other.getTail());
+	}	
+	// i missed class last week i'm not sure what getMyString() is saposed to be. i'm working under the asumption that it's saposed to be like getChars in the java string class so i'll be basing this next method off of that.
+	char[] getMyString(){
+		return getMyStringIter(this, 0);
+	}
+	//iterates through the MyString, when it reaches the end it creates ana array of the apropriate sise and stick in the characters from the back recursivly, it ises the cound variable to determine how large to make the array.
+	char[] getMyStringIter(MyString myStrObj, int count){
+		if( myStrObj.getTail()==null){
+			char[] myStrArr = new char[count+1];
+			myStrArr[count]=myStrObj.getHead();
+			return myStrArr;
+		}
+		char[] myStrArr = getMyStringIter(myStrObj.getTail(), count+1);
+		myStrArr[count]=myStrObj.getHead();
+		return myStrArr;
+	}
+		
 
 
 	//returns primative values
@@ -102,7 +156,7 @@ public final class MyString{
 	}
 	//public int getSizeOf(){
 	//	return sizeOf;
-	}
+	//}
 	public MyString getTail(){
 		return tail;
 	}
