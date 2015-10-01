@@ -4,7 +4,8 @@
 //this is a verion of the string class, MyString class.
 //it is an imutible object that should have all the functionality of the regular string class.
 
-
+import java.math.*;
+import java.lang.*;
 
 public final class MyString{
 	//primative data types
@@ -17,46 +18,24 @@ public final class MyString{
 	public MyString(){
 		tail=null;
 		head='\0';
-		//sizeOf=-1;
 	}
 	// creates a default end of MyString
 	public MyString( char newHead, MyString oldList){
 		this.tail=oldList;
 		this.head=newHead;
-		//this.sizeOf=oldList.getSizeOf()+1;
 	}
-	// creates a new string character, may not need this
-	/**
-	public MyString( char newHead, MyString oldList, int arrSize){
-		this.tail=oldList;
-		this.head=newHead;
-
-	}
-	//creates a MYString object when a MyString objuect is passed, testing
-	public MyString( MyString passedString){
-		this(passedString);
-	}**/
-	
-
 	//creates a MyString from a single character
 	public MyString( char newHead){
-		//MyString newMyString = new MyString();
 		this.tail=new MyString();
 		this.head=newHead;
-		//this.sizeOf=0;
 	}
-
 	//creates a MyString from an array of characters
 	public MyString(char[] chars){
 		MyString newMyString = new MyString();
 		newMyString=createMyString(chars, new MyString(), chars.length);
 		this.tail=newMyString.getTail();
 		this.head=newMyString.getHead();
-		//this.sizeOf=newMyString.getSizeOf();
 	}
-	
-
-	
 	//method that creates a MyString from an array of characters
 	public MyString createMyString(char[] chars, MyString oldList, int charLeft){
 		if (charLeft==0){
@@ -67,13 +46,14 @@ public final class MyString{
 		return newMyString;
 	}
 	//returns the character at the position
-	//*********rember to put some kind of out of bounds error here*********
 	public char charAt(int index){
+		if(index<0) throw new ArrayIndexOutOfBoundsException(index);
 		return charAtIndex( index, this);
 	}
 		
 	//loops through MyString untill it finds the index, returns that char, companion to charAt
 	public char charAtIndex(int index, MyString nextTail){
+		if(index>0 && nextTail.getTail()==null) throw new ArrayIndexOutOfBoundsException(index);
 		if(0==index) return nextTail.getHead();
 		return charAtIndex(index-1, nextTail.getTail());
 	}
@@ -123,21 +103,21 @@ public final class MyString{
 		return new MyString( nextTail.getHead(), toUpperIter(nextTail.getTail()));
 	}
 	//boolean that returens true if all the characters in the MyStringare the same
-	boolean equals(MyString s){
+	public boolean equals(MyString s){
 		return equalsIter(this, s);
 	}
 	//iteratesthrough the MyStrings untill the end or a diffrent character is detected, returns the apropriate boolean value
-	boolean equalsIter( MyString orignal, MyString other){
+	public boolean equalsIter( MyString orignal, MyString other){
 		if(orignal.getHead()==other.getHead() && orignal.getTail()==null && other.getTail()==null) return true;
 		if(orignal.getHead()!=other.getHead()) return false;
 		return equalsIter(orignal.getTail(), other.getTail());
 	}	
 	// i missed class last week i'm not sure what getMyString() is saposed to be. i'm working under the asumption that it's saposed to be like getChars in the java string class so i'll be basing this next method off of that.
-	char[] getMyString(){
+	public char[] getMyString(){
 		return getMyStringIter(this, 0);
 	}
 	//iterates through the MyString, when it reaches the end it creates ana array of the apropriate sise and stick in the characters from the back recursivly, it ises the cound variable to determine how large to make the array.
-	char[] getMyStringIter(MyString myStrObj, int count){
+	public char[] getMyStringIter(MyString myStrObj, int count){
 		if( myStrObj.getTail()==null){
 			char[] myStrArr = new char[count+1];
 			myStrArr[count]=myStrObj.getHead();
@@ -147,16 +127,40 @@ public final class MyString{
 		myStrArr[count]=myStrObj.getHead();
 		return myStrArr;
 	}
-		
+	//returns the string value of the the myString object
+	public String toString(){
+		return toStringIter(this);
+	}
+	//iterates through the MyString object untill the end, returning the string values the characters of theMyString object
+	public String toStringIter(MyString myStrObj){
+		if( myStrObj.getTail()==null) return new String()+myStrObj.getHead();
+		return new String(myStrObj.getHead()+toStringIter(myStrObj.getTail()));
+	}
+	//returns a MyString made from the interger value that was input 
+	public static MyString valueOf( int i){
+		 //returns a character array, in the proper order, from the given integer
+		int numSize = (int)Math.log10(Math.abs(i))+1;
+		char[] myIntArr = valueOfIter((Math.abs(i)), new char[numSize], 0);
+		if(i>=0){
+			return new MyString(myIntArr);
+		}
+		return new MyString('-', new MyString(myIntArr));
+	}
+	//ok, i think the only way i can think of this is to 
+	static public char[] valueOfIter(int i, char[] charArr, int count){
+		if(count==charArr.length-1){
+			charArr[0]=(char)(i+'0');
+			return charArr;		
+		}
+		charArr[charArr.length-1-count]=((char)(i%10+'0'));
+		return valueOfIter(i/10, charArr, count+1);
+	}
 
 
 	//returns primative values
 	public char getHead(){
 		return head;
 	}
-	//public int getSizeOf(){
-	//	return sizeOf;
-	//}
 	public MyString getTail(){
 		return tail;
 	}

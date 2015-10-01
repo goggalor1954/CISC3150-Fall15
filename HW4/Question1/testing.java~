@@ -1,5 +1,5 @@
 import java.util.*;
-
+import java.math.*;
 
 public class testing {
 
@@ -11,10 +11,11 @@ public class testing {
 
 	void go(){
 
-		String jeb = "JEB!"
-		System.out.println(jeb.toLowerCase());
-		System.out.println(jeb);
-		jeb.toLowerCase();
-		System.out.println(jeb);
+		int jeb = 1987;
+		int numSize = (int)Math.log10(jeb)+1;
+		System.out.println(numSize);
+		System.out.println(jeb/10);
+		System.out.println(jeb%10);
+
 	}
 }
